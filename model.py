@@ -174,9 +174,9 @@ class DataLoaderWithTaskname:
     def __init__(self, task_name, data_loader):
         self.task_name = task_name
         self.data_loader = data_loader
-
         self.batch_size = data_loader.batch_size
         self.dataset = data_loader.dataset
+        self.data = data_loader.data
 
     def __len__(self):
         return len(self.data_loader)
