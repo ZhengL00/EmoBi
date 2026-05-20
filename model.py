@@ -281,10 +281,6 @@ class MultitaskModel(transformers.PreTrainedModel):
 
 
     def get_encoder_attr_name(cls, model):
-        """
-        The encoder transformer is named differently in each model "architecture".
-        This method lets us get the name of the encoder attribute
-        """
         model_class_name = model.__class__.__name__
         if model_class_name.startswith("Bert"):
             return "bert"
@@ -292,6 +288,8 @@ class MultitaskModel(transformers.PreTrainedModel):
             return "roberta"
         elif model_class_name.startswith("Albert"):
             return "albert"
+        elif model_class_name.startswith("T5"):
+            return "T5"
         else:
             raise KeyError(f"Add support for new model {model_class_name}")
 
