@@ -5,3 +5,4 @@ torchaudio==2.0.2
 torchvision==0.15.2
 tqdm==4.64.1
 transformers==4.33.2
+pillow==8.4.0
