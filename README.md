@@ -1,6 +1,6 @@
 # EmoBi
 
-This repository contains the source code for our paper "Enhancing Hyperbole and Metaphor Detection with Their Bidirectional Dynamic Interaction and Emotion Knowledge". 
+The implementation of our ACL 2025 paper  "Enhancing Hyperbole and Metaphor Detection with Their Bidirectional Dynamic Interaction and Emotion Knowledge". 
 
 ## Setup
 - **Build environment**
